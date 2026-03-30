@@ -1,6 +1,6 @@
 // pages/api/clients.js
 import { getServerSession } from 'next-auth';
-import { getAllClients } from '../../lib/services/sheetsService';
+import { getAllClients } from '../../../lib/services/sheetsService';
 
 export default async function handler(req, res) {
   const session = await getServerSession(req, res);
